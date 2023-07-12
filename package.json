@@ -1,11 +1,12 @@
 {
     "name": "week-13-Object-Relational-Mapping-code",
     "version": "1.0.0",
-    "description": "Your project description",
-    "main": "index.js",
+    "description": "Y",
+    "main": "server.js",
     "scripts": {
-        "start": "node index.js",
-        "seed": "node develop/seeds/index.js"
+        "start": "node seeds/index.js",
+        
+        "seed": "node seeds/index.js"
     },
     "author": "Your Name",
     "license": "MIT",
