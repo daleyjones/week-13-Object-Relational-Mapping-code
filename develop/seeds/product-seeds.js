@@ -1,26 +1,53 @@
-const seedCategories = require('./category-seeds');
-const seedProducts = require('./product-seeds');
-const seedTags = require('./tag-seeds');
-const seedProductTags = require('./product-tag-seeds');
+const { Product } = require('../models');
 
-const sequelize = require('../config/connection');
+const productData = [
+  {
+    product_name: "Baseball shirt", 
+    price: 5,
+    stock: 100,
+    category_id: 1,
 
-const seedAll = async () => {
-  await sequelize.sync({ force: true });
-  console.log('\n----- DATABASE SYNCED -----\n');
-  await seedCategories();
-  console.log('\n----- CATEGORIES SEEDED -----\n');
+    
+  },
+  {
+    product_name: "Baseball shorts", 
+    price: 10,
+    stock: 100,
+    category_id: 2,
 
-  await seedProducts();
-  console.log('\n----- PRODUCTS SEEDED -----\n');
+    
+  },
+  {
+    product_name: "Baseball music", 
+    price: 15,
+    stock: 100,
+    category_id: 3,
 
-  await seedTags();
-  console.log('\n----- TAGS SEEDED -----\n');
+    
+  },
+  {
+    product_name: "Baseball Hat", 
+    price: 25,
+    stock: 100,
+    category_id: 4,
 
-  await seedProductTags();
-  console.log('\n----- PRODUCT TAGS SEEDED -----\n');
+    
+  },
+  {
+    product_name: "Baseball shoes", 
+    price: 35,
+    stock: 100,
+    category_id: 5,
 
-  process.exit(0);
-};
+    
+  }
 
-seedAll();
+  
+
+
+ 
+];
+
+const seedProducts = () => Product.bulkCreate(productData);
+
+module.exports = seedProducts;
