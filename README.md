@@ -78,9 +78,13 @@ The e-commerce back end application utilizes the following technologies:
 Contributions to this project are welcome! If you find any issues or have suggestions for improvement, please feel free to submit a pull request.
 
 # Walkthrough video
-[      ]
+
+## Walkthrough video
+
+(https://drive.google.com/file/d/1VfrPq3ji2ToxyHB42LUVYXt6fVaLOS4t/view)
+
 # License
 This project is licensed under the MIT License.
 
-
+# Project
 Thank you for checking out this e-commerce back-end application. If you have any questions, feel free to reach out. [https://github.com/daleyjones]
